@@ -1,4 +1,4 @@
-const text = 'Дени моля те отговори ми :< ❤️';
+const text = 'Lorem ipsum dolor sit amet ❤️';
 
 let index = 0;
 
