@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+#main {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+#btn {
+    padding: 6px;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 4px;
+    background-color: rebeccapurple;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+/* Show red borders when filled, but invalid */
+
+input[data-state="invalid"] {
+    border-color: hsl(0, 76%, 50%);
+    transition: all 0.5s;
+}
+
+
+/* Show green borders when valid */
+
+input[data-state="valid"] {
+    border-color: hsl(120, 76%, 50%);
+    transition: all 0.5s;
+}
+
+input {
+    border: 3px solid rebeccapurple;
+    border-radius: 4px;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.todo {
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+}
+
+ul [data-state="done"] {
+    text-decoration: line-through solid rebeccapurple;
+    transition: all 0.5s;
+}
+
+#taskConstainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* #container {
+    display: inline-block;
+}
+
+#delBtn {
+    display: inline-block;
+}
+
+#doneBtn {
+    display: inline-block;
+} */
+
+#doneBtn button {
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 4px;
+    background-color: rebeccapurple;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#delBtn button {
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 4px;
+    background-color: rebeccapurple;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
