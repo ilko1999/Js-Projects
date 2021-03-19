@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ///////////////////////// */
+
+:root {
+    --primary-color: #333333;
+  }
+
+.formated {
+    font-family: 'Space Mono', monospace;  
+}
+
+.img, .content, .page-content{
+    display: flex;
+    align-items: center;
+}
+
+
+/* navigation */
+.navigation h3{
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    color: var(--primary-color);
+}
+
+.navigation {
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 77px;
+    top: 40px;
+}
+
+/* page content */
+.img {
+    justify-content: center;
+    height: 100vh;
+}
+
+.img img {
+    width: 500px;
+}
+
+.content{
+    align-items: unset;
+    margin-left: 0px;
+    flex-flow: column;
+}
+
+.content h1 {
+    padding-left: 100px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 94px;
+    color: var(--primary-color);
+    
+}
+
+.content div{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35.54px;
+    word-wrap: break-word;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Space Mono', monospace;
+    padding-right: 200px;
+    padding-left: 100px;
+}
+
+.content a{
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -0.035em;
+    line-height: 21px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+
+
+.page-content {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/* footer */
+.footer {    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;    
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media only screen and (max-width: 1169px){
+    .page-content{
+        margin: 0px;
+        flex-flow: column;
+    }
+
+    .img img{
+        width: 80%;
+    }
+}
+
+/* tablet */
+
+@media only screen and (max-width: 768px){
+
+    .img img{
+        width: 95%;
+    }
+}
+
+/* phone */
+
+@media only screen and (max-width: 375px){
+
+    .content h1 {
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -0.035em;
+        word-wrap: break-word;
+        padding-left: 20px;
+    }
+
+    .content div {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    padding-left: 20px;
+    padding-right: 0;
+    }
+    
+}
